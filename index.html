@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<title>Calculadora de Horas</title>
+
+<style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #eef2ff;
+            margin: 0;
+            padding: 0;
+            line-height: 1.7;
+        }
+        .container {
+            width: 80%;
+            max-width: 1000px;
+            margin: 30px auto;
+        }
+        .title-box {
+            background: linear-gradient(135deg, #4f46e5, #06b6d4);
+            padding: 40px 50px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+            margin-bottom: 20px;
+            font-size: 36px;
+            color: white;
+        }
+        h1 {
+            margin: 0;
+            font-size: 34px;
+            color: white;
+        }
+        .blog-box {
+            background: white;
+            padding: 25px 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+        }
+        h2 {
+            margin-top: 30px;
+            font-size: 28px;
+            color: #4f46e5;
+        }
+        p, li {
+            font-size: 16px;
+            color: #444;
+        }
+        ul {
+            padding-left: 20px;
+        }
+</style>
+
+<style>
+        #progressBar{
+            position:fixed;
+            top:0;
+            left:0;
+            height:5px;
+            width:0;
+            background:#06b6d4;
+            z-index:9999;
+        }
+</style>
+
+</head>
+
+<body>
+
+<div id="progressBar"></div>
+
+<script>
+window.addEventListener('scroll',function(){
+ let h=document.documentElement;
+ let sc=(h.scrollTop)/(h.scrollHeight-h.clientHeight)*100;
+ document.getElementById('progressBar').style.width=sc+'%';
+});
+</script>
+
+<div class="container">
+
+    <div class="title-box">
+        <h1>
+            <a href="http://calculadoraadehoras.com.br/" style="color:white; text-decoration:none;">
+                calculadora de horas
+            </a>
+        </h1>
+        <p>A Ferramenta Inteligente Para Gerenciar Tempo, Trabalho e Produtividade</p>
+    </div>
+
+    <div class="blog-box">
+
+        <h2>Introdução</h2>
+        <p>A organização do tempo tornou-se uma necessidade fundamental tanto para profissionais quanto para estudantes e empresas. Em um cenário onde cada minuto influencia a produtividade, utilizar uma calculadora de horas pode fazer toda a diferença no controle de jornadas, planejamento de tarefas e gerenciamento eficiente das atividades diárias.</p>
+
+        <p>Muitas pessoas ainda realizam cálculos de tempo manualmente, o que aumenta significativamente a chance de erros. Seja para calcular horas trabalhadas, horas extras, intervalos, escalas de trabalho ou simplesmente descobrir a diferença entre dois horários, uma ferramenta especializada oferece rapidez e precisão.</p>
+
+        <h2>O Que é uma Calculadora de Horas?</h2>
+        <p>Uma calculadora de horas é uma ferramenta desenvolvida para realizar operações envolvendo tempo. Ela permite somar, subtrair, converter e calcular intervalos entre horários de maneira automática.</p>
+
+        <p>Diferentemente das calculadoras tradicionais, ela trabalha com horas, minutos e segundos no formato correto, eliminando erros comuns de conversão manual.</p>
+
+        <h2>Por Que o Controle de Tempo é Importante?</h2>
+        <p>O tempo é um dos recursos mais valiosos. Empresas, freelancers e estudantes dependem do controle de horas para produtividade, pagamentos e organização de rotina.</p>
+
+        <h2>Como Funciona</h2>
+        <p>O usuário insere horários de início e término, e a ferramenta calcula automaticamente o resultado em segundos.</p>
+
+        <ul>
+            <li>Somar períodos de tempo</li>
+            <li>Subtrair horários</li>
+            <li>Calcular horas trabalhadas</li>
+            <li>Determinar horas extras</li>
+            <li>Converter minutos e segundos</li>
+        </ul>
+
+        <h2>Horas Trabalhadas</h2>
+        <p>Permite calcular jornadas completas considerando entrada, saída e pausas, garantindo controle preciso do expediente.</p>
+
+        <h2>Horas Extras</h2>
+        <p>Facilita o cálculo do tempo trabalhado além da jornada regular, evitando erros em pagamentos e registros.</p>
+
+        <h2>Benefícios</h2>
+        <p>Entre os principais benefícios estão precisão, rapidez e eliminação de erros manuais.</p>
+
+        <h2>Aplicações</h2>
+        <p>Empresas utilizam para folha de pagamento, freelancers para faturamento e estudantes para organização do tempo de estudo.</p>
+
+        <h2>Conclusão</h2>
+        <p>A calculadora de horas é essencial para quem deseja mais controle, produtividade e precisão no gerenciamento do tempo.</p>
+
+    </div>
+
+</div>
+
+</body>
+</html>
